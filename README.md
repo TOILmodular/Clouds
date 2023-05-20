@@ -26,7 +26,7 @@ I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB
 I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. The layout is the same for both PCB versions.
 
 ## Additional Information about specific Components
-There are several SMD components, which I listed here. Although the microcontroller does not need to be soldered separately, due to the use of the STM32F103 Blue Pill development board.
+There are several SMD components, which I listed below. Besides the STM32F405 microcontroller, the other main SMD part is the WM8731 audio codec chip. 
 - DAC124S085 (DAC, 10-VSSOP package, the most challenging component due to its size)
 - NJM4580/TL072 (OpAmp, 8-SOIC package)
 - LM1117-3.3 (voltage regulator, SOT-223 package)
