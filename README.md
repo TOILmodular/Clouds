@@ -45,8 +45,21 @@ I shared the .hex files for the STM32F405 chip (bootloader and main) in the fold
 ## Programming
 The main PCB contains connection points for both connector types for programming STM32 chips, JTAG and UART. Those can be used for standard pins with 2.54mm distance. Depending on the available connector, you only need one of those two connection point groups. However, I only tested the UART connection. The JTAG connection points have been added to the PCB by following the Mutable Instruments original design.
 
+<img width="200" alt="ProgrammingConnectors" src="https://github.com/TOILmodular/Clouds/assets/97026614/60779ef5-7a4f-42a2-83d0-d1fb9aacc26a">
+
 Besides that, there are two connection points for putting the chip into boot mode, which is needed for loading the bootloader file. Just solder a 1x2 pin with standard 2.54mm distance to connection points labeled "BOOT". For activating the boot mode, place a jumper onto the pins. As soon as the bootloder is uploaded, remove the jumper to put the chip into operation mode, so the main code can be uploaded.
+
+<img width="200" alt="BootConnectors" src="https://github.com/TOILmodular/Clouds/assets/97026614/dd45d33f-ffa9-4c42-a707-e779d0dd8267">
 
 If you want to see more about the chip programming process, you can check out [this YouTube video](https://xxx).
 
-<img width="321" alt="ProgrammingConnectors" src="https://user-images.githubusercontent.com/97026614/227706871-7a7d2b94-ab19-4e98-b119-1c4047258e0a.png">
+## Calibration
+The calibration procedure is the same, as the one for the original module from Mutable Instruments.
+
+1. Disconnect all CV inputs.
+2. Connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the V/OCT input.
+3. Press the Load/Save button, and while you hold it down, press the Blend Parameter/Audio Quality button. 2 LEDs will blink.
+4. Play a C2 note, or send a 1V voltage from your CV source.
+5. Press the Load/Save button. Four LEDs will blink.
+6. Play a C4 note, or send a 3V voltage from your CV source.
+7. Press the Load/Save push-button.
