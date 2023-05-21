@@ -26,9 +26,13 @@ I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB
 I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. The layout is the same for both PCB versions.
 
 ## Additional Information about specific Components
-There are several SMD components, which I listed below. Besides the STM32F405 microcontroller, the other main SMD part is the WM8731 audio codec chip. 
-- DAC124S085 (DAC, 10-VSSOP package, the most challenging component due to its size)
-- NJM4580/TL072 (OpAmp, 8-SOIC package)
+There are several SMD components, which I listed below. Besides the STM32F405 microcontroller, the other main SMD part is the WM8731 audio codec chip from Cirrus Logic.The production of that chip is now discontinued. There are still some chips available on stock, but the only ones offered by certified dealers have the package type QFN (quad flat non-lead).
+
+Soldering such a part by hand might seem to be difficult. But I made the experience, that it is actually very easy to solder. You can check out this YouTube video about how I soldered that chip.
+
+Here is a list of SMD parts in my design.
+- STM32F405RGT6 (microcontroller, version 7 is also working fine)
+- WM8731 (audio codec, 28-VQFN package)
 - LM1117-3.3 (voltage regulator, SOT-223 package)
 - LM4040B25 and LM4040B10 (voltage regulators, SOT-23-3 package)
 - MMBT3904 (SMD version of the 2N3904 transistor, SOT-23-3 Package)
