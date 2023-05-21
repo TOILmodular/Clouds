@@ -34,34 +34,19 @@ Here is a list of SMD parts in my design.
 - STM32F405RGT6 (microcontroller, version 7 is also working fine)
 - WM8731 (audio codec, 28-VQFN package)
 - LM1117-3.3 (voltage regulator, SOT-223 package)
-- LM4040B25 and LM4040B10 (voltage regulators, SOT-23-3 package)
-- MMBT3904 (SMD version of the 2N3904 transistor, SOT-23-3 Package)
+- LM4040B10 (voltage regulator, SOT-23-3 package)
 - 0.1uF capacitors (1608 package)
-
-The design contains a quad VCA IC V2164 (THT version) from Cool Audio. That chip might not be available anymore. An alternative is the AS2164, available at Electric Druid or Thonk.
 
 Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
 
 ## Firmware
-I shared the .hex files for the STM32F103 chip (bootloader and main) in the folder Firmware.
+I shared the .hex files for the STM32F405 chip (bootloader and main) in the folder Firmware.
 
-The upload process is the same, as for my Braids clone. You can check out my [Braids video](https://youtu.be/TBMySGm7jKk) about how to program the Blue Pill board.
+## Programming
+The main PCB contains connection points for both connector types for programming STM32 chips, JTAG and UART. Those can be used for standard pins with 2.54mm distance. Depending on the available connector, you only need one of those two connection point groups. However, I only tested the UART connection. The JTAG connection points have been added to the PCB by following the Mutable Instruments original design.
 
-An alternative Parasite firmware version available as .wav file, which can also be uploaded via the procedure described in the official Mutable Instruments manual.
+Besides that, there are two connection points for putting the chip into boot mode, which is needed for loading the bootloader file. Just solder a 1x2 pin with standard 2.54mm distance to connection points labeled "BOOT". For activating the boot mode, place a jumper onto the pins. As soon as the bootloder is uploaded, remove the jumper to put the chip into operation mode, so the main code can be uploaded.
 
-Check [this YouTube video](https://youtu.be/W8zez9X0Xok) for more details about the firmware update process.
+If you want to see more about the chip programming process, you can check out [this YouTube video](https://xxx).
 
-## STM32F103 Version
-CAUTION! There are three different versions of the Blue Pill board available.
-The difference is the version of the ST32F103 microchip on the board.
-The versions differ in the flash memory size:
-- STM32F103C6T6: 32kB flash memory
-- STM32F103C8T6: 64kB flash memory
-- STM32F103CBT6: 128kB flash memory
-
-The code size requires the 128kB version.
-However, that version might be difficult to find, if available at all.
-But it turned out, that STM3F103C8T6 is also ok for this module.
-
-## Offset CV +10V/+5V
-The original design from Mutable Instruments provides the option to have a +5V offset CV for all channels, instead of +10V. This is done by a jumper setting on the module backside. I decided to skip that part and to only have the +10V offset version, since the implementation of that option would have required another dual op amp.
+<img width="321" alt="ProgrammingConnectors" src="https://user-images.githubusercontent.com/97026614/227706871-7a7d2b94-ab19-4e98-b119-1c4047258e0a.png">
