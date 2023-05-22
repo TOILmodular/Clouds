@@ -1,7 +1,7 @@
 # Clouds - Granular Sampler Eurorack Module
 A clone of the Mutable Instruments Clouds module.
 
-<img height="500" src="https://github.com/TOILmodular/Clouds/assets/97026614/6302c4ed-5bb9-4b85-9d67-47ec249ef3a8"> <img height="500" src="https://github.com/TOILmodular/Clouds/assets/97026614/3ba8f56e-13f3-4e37-b3a5-8577a873fdca"> 
+<img height="500" src="https://github.com/TOILmodular/Clouds/assets/97026614/5dd48620-f568-4704-8d37-8d14a14df783"> <img height="500" src="https://github.com/TOILmodular/Clouds/assets/97026614/ec769496-852a-4bec-b98c-c0662abd589e"> 
 
 <img height="500" src="https://github.com/TOILmodular/Clouds/assets/97026614/bcd2b8c7-2848-4d0f-b627-2fa81ea0c80c"> <img height="500" src="https://github.com/TOILmodular/Clouds/assets/97026614/43f0c30f-708c-4732-b6cb-8b2d8db97a31">
 
