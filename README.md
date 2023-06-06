@@ -26,7 +26,7 @@ I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB
 I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. The layout is the same for both PCB versions.
 
 ## Additional Information about specific Components
-There are several SMD components, which I listed below. Besides the STM32F405 microcontroller, the other main SMD part is the WM8731 audio codec chip from Cirrus Logic.The production of that chip is now discontinued. There are still some chips available on stock, but the only ones offered by certified dealers have the package type QFN (quad flat non-lead).
+There are several SMD components, which I listed below. Besides the STM32F405 microcontroller, the other main SMD part is the WM8731 audio codec chip from Cirrus Logic. The production of that chip is now discontinued. There are still some chips available on stock, but the only ones offered by certified dealers have the package type QFN (quad flat non-lead).
 
 <img width="600" alt="WM8731 Close-Up" src="https://github.com/TOILmodular/Clouds/assets/97026614/596c0339-ab18-48d0-8c38-c2ffb3d6c844">
 
