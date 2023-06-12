@@ -46,6 +46,9 @@ Here is a list of SMD parts in my design.
 
 Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
 
+## Schematics
+Due to the fact that the pin layout of the two package versions for the WM8731 chip are different, I uploaded two versions of the module schmatic in the folder "Schematic". The file "Schematic_Clouds.pdf" contains the layout for the QFN package version, while the file "Schematic_Clouds_WM8731SSOP28.pdf" is the one with the SSOP package.
+
 ## Firmware
 I shared the .hex files for the STM32F405 chip (bootloader and main) in the folder Firmware.
 
