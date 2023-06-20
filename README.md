@@ -19,9 +19,9 @@ The main PCB differs for all three versions. One reason is the different size of
 
 NOTE: I did not test the correctness of the "WM8731SSOP28" version of the main PCB.
 
-<img width="300" alt="Clouds_MainPCB" src="https://github.com/TOILmodular/Clouds/assets/97026614/013ca7f5-13fb-4ed9-afef-e591e3434d4f">
+<img width="300" alt="Clouds_MainPCB" src="https://github.com/TOILmodular/Clouds/assets/97026614/ecb6af17-00cb-4abf-93ce-21dd71ebd994">
 
-<img width="300" alt="Clouds_MainPCB_V2" src="https://github.com/TOILmodular/Clouds/assets/97026614/fb098750-b861-4347-809c-d34ee51270a0">
+<img width="300" alt="Clouds_MainPCB_V2" src="https://github.com/TOILmodular/Clouds/assets/97026614/4b3c9bbd-61e6-41da-9ed6-586381aa13d5">
 
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
@@ -46,6 +46,12 @@ Here is a list of SMD parts in my design.
 
 Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
 
+The "In Gain" potentiometer is a 2-gang 50K A-type. The part from the original BOM from Mutable Instruments is the Bourns PTV112-4420A-A503. That pot does not have any screw thread at the shaft, and the shaft length is very small. So when soldering it flush to the PCB, it will not stick out enough from the front panel to prperly place a knob. I only realized those facts after I ordered the PCBs. Unfortunately, I did not find any other A50K pot with a longer shaft with the same footprint. So I used the original one and soldered it as close to the front panel as possible. It is working ok, but you need to be aware of that, when mounting the part on the PCB.
+
+<img height="300" alt="Pot Details 4" src="https://github.com/TOILmodular/Clouds/assets/97026614/1e073178-2891-45db-a090-7a83cb425dd6">
+
+<img height="300" alt="Pot Details 2" src="https://github.com/TOILmodular/Clouds/assets/97026614/c9e70dee-e349-4697-8344-e24875cc0586">
+
 ## Schematics
 Due to the fact that the pin layout of the two package versions for the WM8731 chip are different, I uploaded two versions of the module schmatic in the folder "Schematic". The file "Schematic_Clouds.pdf" contains the layout for the QFN package version, while the file "Schematic_Clouds_WM8731SSOP28.pdf" is the one with the SSOP package.
 
@@ -55,7 +61,7 @@ I shared the .hex files for the STM32F405 chip (bootloader and main) in the fold
 ## Programming
 The main PCB contains connection points for both connector types for programming STM32 chips, JTAG and UART. Those can be used for standard pins with 2.54mm distance. Depending on the available connector, you only need one of those two connection point groups. However, I only tested the UART connection. The JTAG connection points have been added to the PCB by following the Mutable Instruments original design.
 
-<img width="200" alt="ProgrammingConnectors" src="https://github.com/TOILmodular/Clouds/assets/97026614/60779ef5-7a4f-42a2-83d0-d1fb9aacc26a">
+<img width="200" alt="ProgrammingConnectors" src="https://github.com/TOILmodular/Clouds/assets/97026614/4cebf6e1-bde4-4bdb-9433-1240bab90238">
 
 Besides that, there are two connection points for putting the chip into boot mode, which is needed for loading the bootloader file. Just solder a 1x2 pin with standard 2.54mm distance to connection points labeled "BOOT". For activating the boot mode, place a jumper onto the pins. As soon as the bootloder is uploaded, remove the jumper to put the chip into operation mode, so the main code can be uploaded.
 
@@ -73,3 +79,5 @@ The calibration procedure is the same, as the one for the original module from M
 5. Press the Load/Save button. Four LEDs will blink.
 6. Play a C4 note, or send a 3V voltage from your CV source.
 7. Press the Load/Save push-button.
+
+NOTE! If you want to load the alternative Parasite firmware to the module, you need to calibrate the module afterwards. But the method to bring the module into calibration mode is slightly different. Please check the details on the [Parasites page](https://mqtthiqs.github.io/parasites/clouds.html).
