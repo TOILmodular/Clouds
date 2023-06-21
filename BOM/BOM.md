@@ -41,7 +41,7 @@
 | Voltage Regulator | LM1117-3.3 | 2 | SMD (SOT-223) |
 | Voltage Regulator | LM4040B10 | 1 | SMD (SOT-23) |
 | Potentiometer | B10K | 6 | |
-| Potentiometer | A50K | 1 | PTV112-4420A-A503 |
+| Potentiometer | A50K | 1 | Bourns PTV112-4420A-A503 |
 | Mono Jack | 3.5mm | 12 | |
 | Switch | Tactile | 3 | e.g. Mouser: TL1105SPF160 |
 | Header | 2.54mm Male 1x10 | 2 | Connector Main Board |
