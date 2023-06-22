@@ -30,7 +30,7 @@
 | Capacitor Ceramic | 18pF | 4 | |
 | Diode | 1N5819 | 2 | |
 | Diode | LED | 1 | |
-| Diode | LED 2-color) | 4 | common cathode |
+| Diode | LED (2-color) | 4 | common cathode |
 | Transistor | MMBT3904 | 2 | SMD (SOT-23) |
 | Op Amp | TL074 | 1 | |
 | Op Amp | MCP6004 | 1 | |
