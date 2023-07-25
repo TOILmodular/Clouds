@@ -15,7 +15,7 @@ However, since most DIY projects for Eurorack modules out there are using potent
 
 <img width="300" alt="Clouds_CtrlPCB_Thonk" src="https://github.com/TOILmodular/Clouds/assets/97026614/855f8c3c-d8a5-49ba-8d22-edc0a2164a0b">
 
-The main PCB differs for all three versions. One reason is the different size of the jacks, which required a slight shift of the connecting headers between control and mainboard. The main PCB for the version "WM8731SSOP28" also differs from the "Thonk" version due to the fact that a different version of the audio codec chip WM8731 is. You will find more details about that in the section "Additional Information about specific Components" below.
+The main PCB differs for all three versions. One reason is the different size of the jacks, which required a slight shift of the connecting headers between control and mainboard. The main PCB for the version "WM8731SSOP28" also differs from the "Thonk" version due to the fact that a different version of the audio codec chip WM8731 is used. You will find more details about that in the section "Additional Information about specific Components" below.
 
 NOTE: I did not test the correctness of the "WM8731SSOP28" version of the main PCB.
 
