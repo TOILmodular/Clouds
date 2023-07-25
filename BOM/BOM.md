@@ -38,6 +38,8 @@
 | Shift Register | 74HC595 | 1 | |
 | Audio Codec | WM8731 | 1 | SMD (28-VQFN) |
 | Microcontroller | STM32F405RGT6 or STM32F405RGT7 | 1 | SMD (LQFP64) |
+| Oscillator Crystal | 8MHz	| 1	| leg distance 4.8mm |
+| Oscillator Crystal | 12.288MHz	| 1	| leg distance 4.8mm |
 | Voltage Regulator | LM1117-3.3 | 2 | SMD (SOT-223) |
 | Voltage Regulator | LM4040B10 | 1 | SMD (SOT-23) |
 | Potentiometer | B10K | 6 | |
