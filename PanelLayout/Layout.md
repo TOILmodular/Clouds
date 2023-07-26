@@ -39,4 +39,4 @@ Coordinates origin is the lower left corner of the panel.
 | 26 | 57 | 15 | Output L Jack |
 | 27 | 69 | 15 | Output R Jack |
 
-<img height="1200" src="https://github.com/TOILmodular/Clouds/assets/97026614/393ca098-e6db-4ae2-84f9-bf9ca49f6d0d"> 
+<img height="1200" src="https://github.com/TOILmodular/Clouds/assets/97026614/3e923c8e-18e0-4735-b61d-cac4b0cef934">
