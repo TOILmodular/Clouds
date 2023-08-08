@@ -21,13 +21,13 @@
 | Resistor 1/4W | LEDG | 4 |  Limiting resistor for 2-color LEDs (green) - value depending on the LED used and the preferred brightness |
 | Resistor 1/4W | LEDR | 4 |  Limiting resistor for 2-color LEDs (red) - value depending on the LED used and the preferred brightness |
 | Capacitor Electrolytic | 47uF | 5 | |
-| Capacitor Electrolytic | 22uF | 8 | |
+| Capacitor Electrolytic | 10uF | 8 | |
 | Capacitor Ceramic | 2.2uF | 2 | |
 | Capacitor Ceramic | 1uF | 2 | |
 | Capacitor Ceramic | 0.1uF | 18 | SMD (1608) |
 | Capacitor Ceramic | 1000pF | 6 | |
 | Capacitor Ceramic | 220pF | 2 | |
-| Capacitor Ceramic | 18pF | 4 | |
+| Capacitor Ceramic | 18pF | 6 | |
 | Diode | 1N5819 | 2 | |
 | Diode | LED | 1 | |
 | Diode | LED (2-color) | 4 | common cathode |
