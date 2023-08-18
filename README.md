@@ -19,9 +19,9 @@ The main PCB differs for all three versions. One reason is the different size of
 
 NOTE: I did not test the correctness of the "WM8731SSOP28" version of the main PCB.
 
-<img width="300" alt="Clouds_MainPCB" src="https://github.com/TOILmodular/Clouds/assets/97026614/9f0c4697-b5b6-4f9e-9ec0-8b4e16118fdd">
+<img width="300" alt="Clouds_MainPCB" src="https://github.com/TOILmodular/Clouds/assets/97026614/349e4a9b-065d-49dc-8fe8-ce97e6e2f9a0">
 
-<img width="300" alt="Clouds_MainPCB_V2" src="https://github.com/TOILmodular/Clouds/assets/97026614/952866a4-caf1-4856-acbe-5a8ba1348fcc">
+<img width="300" alt="Clouds_MainPCB_V2" src="https://github.com/TOILmodular/Clouds/assets/97026614/c42a49af-d477-4824-813a-67af106b92d5">
 
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
