@@ -26,9 +26,9 @@ NOTE: I did not test the correctness of the "WM8731SSOP28" version of the main P
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
 ## Panel Layout
-I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. The layout is the same for all PCB versions.
+I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the PCB Gerber files.
 
-In addition, there is a Gerber file for the panel, following the HP standard. My own modules do not follow that width standard, as I am only using sliding nuts in my racks.
+In addition, there is another Gerber file for the panel, following the HP standard. My own modules do not follow that width standard, as I am only using sliding nuts in my racks.
 
 You can use the panel Gerber file to have the panel built out of PCB material.
 
