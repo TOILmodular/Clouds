@@ -28,6 +28,10 @@ I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB
 ## Panel Layout
 I added the information about hole coordinates for the front panel in the folder PanelLayout, referring to the component layout in the Gerber files. The layout is the same for all PCB versions.
 
+In addition, there is a Gerber file for the panel, following the HP standard. My own modules do not follow that width standard, as I am only using sliding nuts in my racks.
+
+You can use the panel Gerber file to have the panel built out of PCB material.
+
 ## Additional Information about specific Components
 There are several SMD components, which I listed below. Besides the STM32F405 microcontroller, the other main SMD part is the WM8731 audio codec chip from Cirrus Logic. The production of that chip is now discontinued. There are still some chips available in stock, but the only ones offered by certified dealers have the package type QFN (quad flat no lead).
 
