@@ -39,7 +39,7 @@ There are several SMD components, which I listed below. Besides the STM32F405 mi
 
 Soldering such a part by hand might seem to be difficult. But I made the experience, that it is actually very easy to solder. You can check out [this YouTube video](https://youtu.be/pF8kdi-zm-c) about how I soldered that chip.
 
-As mentioned above, I created a PCB version "WM8731SSOP28", which contains the footprint of the WM8731 chip with the package 28-SSOP, which was also used in the original Mutable Instruments module, as far as I know. I did not find any official online dealer, who still has such chips in stock. However, they mught still be offered by non-certified dealers on platforms, like Ebay.
+As mentioned above, I created a PCB version "WM8731SSOP28", which contains the footprint of the WM8731 chip with the package 28-SSOP, which was also used in the original Mutable Instruments module, as far as I know. I did not find any official online dealer, who still has such chips in stock. However, they might still be offered by non-certified dealers on platforms, like Ebay.
 
 Here is a list of SMD parts in my design.
 - STM32F405RGT6 (microcontroller, version 7 is also working fine)
